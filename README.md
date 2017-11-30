@@ -13,6 +13,9 @@ let bip68 = require('bip68')
 bip68.encode({ seconds: 2048 })
 // => 0x00400004
 
+bip68.encode({ seconds: 102 })
+// => TypeError: Expected Number seconds as a multiple of 512 (as per the BIP)
+
 bip68.encode({ blocks: 1 })
 // => 0x000000c8
 
