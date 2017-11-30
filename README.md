@@ -27,4 +27,4 @@ bip68.decode(0xffffffff) // final sequence
 ```
 
 
-## LICENSE [MIT](LICENSE)
+## LICENSE [ISC](LICENSE)
