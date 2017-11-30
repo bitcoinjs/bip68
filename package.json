@@ -1,6 +1,6 @@
 {
   "name": "bip68",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Relative lock-time using consensus-enforced sequence numbers",
   "keywords": [
     "bip68",
