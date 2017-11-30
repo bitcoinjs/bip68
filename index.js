@@ -29,14 +29,14 @@ function encode ({ blocks, seconds }) {
 
   if (seconds !== undefined) {
     if (typeof seconds !== 'number') throw new TypeError('Expected Number seconds')
-    if (seconds >= SECONDS_MAX) throw new TypeError('Expected Number seconds < ' + SECONDS_MAX)
+    if (seconds > SECONDS_MAX) throw new TypeError('Expected Number seconds <= ' + SECONDS_MAX)
     if (seconds % SECONDS_MOD !== 0) throw new TypeError('Expected Number seconds as a multiple of ' + SECONDS_MOD)
 
     return SEQUENCE_LOCKTIME_TYPE_FLAG | (seconds >> SEQUENCE_LOCKTIME_GRANULARITY)
   }
 
   if (typeof blocks !== 'number') throw new TypeError('Expected Number blocks')
-  if (blocks >= SEQUENCE_LOCKTIME_MASK) throw new TypeError('Expected Number blocks < ' + BLOCKS_MAX)
+  if (blocks > SEQUENCE_LOCKTIME_MASK) throw new TypeError('Expected Number blocks <= ' + BLOCKS_MAX)
 
   return blocks
 }

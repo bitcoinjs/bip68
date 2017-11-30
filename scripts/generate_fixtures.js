@@ -9,6 +9,19 @@ function uint32hex (i) {
   return '0x' + ('00000000' + i.toString(16)).slice(-8)
 }
 
+function addFail (object) {
+  try {
+    bip68.encode(object)
+  } catch (e) {
+    fixtures.invalid.push(Object.assign({
+      exception: e
+    }, object))
+    return
+  }
+
+  throw new Error(`No fail ${JSON.stringify(object)}`)
+}
+
 function addSequence (i) {
   let result = {
     description: `${uint32hex(i)} (${binary(i)})`
@@ -16,6 +29,11 @@ function addSequence (i) {
   Object.assign(result, bip68.decode(i), { sequence: i })
   if (result.blocks === undefined && result.seconds === undefined) {
     result.disabled = true
+  }
+
+  if (!(i & ~0x0040ffff)) {
+    result.strict = true
+    bip68.encode(result) // enforces no throw
   }
 
   fixtures.valid.push(result)
@@ -26,38 +44,16 @@ for (let i = 0x0000fffc; i < 0x0001000f; ++i) addSequence(i)
 for (let i = 0x003ffffc; i < 0x0040000f; ++i) addSequence(i)
 for (let i = 0x0040fffc; i < 0x0041000f; ++i) addSequence(i)
 for (let i = 0x7ffffffc; i < 0x8000000f; ++i) addSequence(i)
+addSequence(0xffffffff)
 
-fixtures.invalid.push({
-  blocks: 0x0000ffff,
-  exception: 'Expected Number blocks < '
-})
-fixtures.invalid.push({
-  blocks: 0x00010000,
-  exception: 'Expected Number blocks < '
-})
-fixtures.invalid.push({
-  blocks: null,
-  exception: 'Expected Number blocks'
-})
-fixtures.invalid.push({
-  seconds: 1,
-  exception: 'Expected Number seconds as multiple of 512'
-})
-fixtures.invalid.push({
-  seconds: 511,
-  exception: 'Expected Number seconds as multiple of 512'
-})
-fixtures.invalid.push({
-  seconds: 513,
-  exception: 'Expected Number seconds as multiple of 512'
-})
-fixtures.invalid.push({
-  seconds: 33554432,
-  exception: 'Expected Number seconds < 33554432'
-})
-fixtures.invalid.push({
-  seconds: null,
-  exception: 'Expected Number seconds'
-})
+addFail({ blocks: 0x00010000 })
+addFail({ blocks: null })
+addFail({ seconds: 1 })
+addFail({ seconds: 511 })
+addFail({ seconds: 513 })
+addFail({ seconds: 33554431 })
+addFail({ seconds: 33554432 })
+addFail({ seconds: 33554433 })
+addFail({ seconds: null })
 
 console.log(JSON.stringify(fixtures, null, 2))
