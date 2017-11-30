@@ -16,7 +16,10 @@ bip68.encode({ seconds: 2048 })
 bip68.encode({ seconds: 102 })
 // => TypeError: Expected Number seconds as a multiple of 512 (as per the BIP)
 
-bip68.encode({ blocks: 1 })
+bip68.encode({ blocks: 54})
+// => 0x00000036
+
+bip68.encode({ blocks: 200 })
 // => 0x000000c8
 
 bip68.decode(0x03ffffff)
