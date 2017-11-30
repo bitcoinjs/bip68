@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/bitcoinjs/bip68.svg?branch=master&style=flat-square)](https://travis-ci.org/bitcoinjs/bip68)
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-Relative lock-time using consensus-enforced sequence numbers.
+A [BIP68](https://github.com/bitcoin/bips/blob/master/bip-0068.mediawiki) relative lock-time encoding library.
 
 
 ## Example

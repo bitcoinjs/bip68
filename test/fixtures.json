@@ -1,4 +1,493 @@
 {
-  "valid": [],
-  "invalid": []
+  "valid": [
+    {
+      "description": "0x00000000 (00000000000000000000000000000000)",
+      "blocks": 0,
+      "sequence": 0
+    },
+    {
+      "description": "0x00000001 (00000000000000000000000000000001)",
+      "blocks": 1,
+      "sequence": 1
+    },
+    {
+      "description": "0x00000002 (00000000000000000000000000000010)",
+      "blocks": 2,
+      "sequence": 2
+    },
+    {
+      "description": "0x00000003 (00000000000000000000000000000011)",
+      "blocks": 3,
+      "sequence": 3
+    },
+    {
+      "description": "0x00000004 (00000000000000000000000000000100)",
+      "blocks": 4,
+      "sequence": 4
+    },
+    {
+      "description": "0x00000005 (00000000000000000000000000000101)",
+      "blocks": 5,
+      "sequence": 5
+    },
+    {
+      "description": "0x00000006 (00000000000000000000000000000110)",
+      "blocks": 6,
+      "sequence": 6
+    },
+    {
+      "description": "0x00000007 (00000000000000000000000000000111)",
+      "blocks": 7,
+      "sequence": 7
+    },
+    {
+      "description": "0x00000008 (00000000000000000000000000001000)",
+      "blocks": 8,
+      "sequence": 8
+    },
+    {
+      "description": "0x00000009 (00000000000000000000000000001001)",
+      "blocks": 9,
+      "sequence": 9
+    },
+    {
+      "description": "0x0000000a (00000000000000000000000000001010)",
+      "blocks": 10,
+      "sequence": 10
+    },
+    {
+      "description": "0x0000000b (00000000000000000000000000001011)",
+      "blocks": 11,
+      "sequence": 11
+    },
+    {
+      "description": "0x0000000c (00000000000000000000000000001100)",
+      "blocks": 12,
+      "sequence": 12
+    },
+    {
+      "description": "0x0000000d (00000000000000000000000000001101)",
+      "blocks": 13,
+      "sequence": 13
+    },
+    {
+      "description": "0x0000000e (00000000000000000000000000001110)",
+      "blocks": 14,
+      "sequence": 14
+    },
+    {
+      "description": "0x0000fffc (00000000000000001111111111111100)",
+      "blocks": 65532,
+      "sequence": 65532
+    },
+    {
+      "description": "0x0000fffd (00000000000000001111111111111101)",
+      "blocks": 65533,
+      "sequence": 65533
+    },
+    {
+      "description": "0x0000fffe (00000000000000001111111111111110)",
+      "blocks": 65534,
+      "sequence": 65534
+    },
+    {
+      "description": "0x0000ffff (00000000000000001111111111111111)",
+      "blocks": 65535,
+      "sequence": 65535
+    },
+    {
+      "description": "0x00010000 (00000000000000010000000000000000)",
+      "blocks": 0,
+      "sequence": 65536
+    },
+    {
+      "description": "0x00010001 (00000000000000010000000000000001)",
+      "blocks": 1,
+      "sequence": 65537
+    },
+    {
+      "description": "0x00010002 (00000000000000010000000000000010)",
+      "blocks": 2,
+      "sequence": 65538
+    },
+    {
+      "description": "0x00010003 (00000000000000010000000000000011)",
+      "blocks": 3,
+      "sequence": 65539
+    },
+    {
+      "description": "0x00010004 (00000000000000010000000000000100)",
+      "blocks": 4,
+      "sequence": 65540
+    },
+    {
+      "description": "0x00010005 (00000000000000010000000000000101)",
+      "blocks": 5,
+      "sequence": 65541
+    },
+    {
+      "description": "0x00010006 (00000000000000010000000000000110)",
+      "blocks": 6,
+      "sequence": 65542
+    },
+    {
+      "description": "0x00010007 (00000000000000010000000000000111)",
+      "blocks": 7,
+      "sequence": 65543
+    },
+    {
+      "description": "0x00010008 (00000000000000010000000000001000)",
+      "blocks": 8,
+      "sequence": 65544
+    },
+    {
+      "description": "0x00010009 (00000000000000010000000000001001)",
+      "blocks": 9,
+      "sequence": 65545
+    },
+    {
+      "description": "0x0001000a (00000000000000010000000000001010)",
+      "blocks": 10,
+      "sequence": 65546
+    },
+    {
+      "description": "0x0001000b (00000000000000010000000000001011)",
+      "blocks": 11,
+      "sequence": 65547
+    },
+    {
+      "description": "0x0001000c (00000000000000010000000000001100)",
+      "blocks": 12,
+      "sequence": 65548
+    },
+    {
+      "description": "0x0001000d (00000000000000010000000000001101)",
+      "blocks": 13,
+      "sequence": 65549
+    },
+    {
+      "description": "0x0001000e (00000000000000010000000000001110)",
+      "blocks": 14,
+      "sequence": 65550
+    },
+    {
+      "description": "0x003ffffc (00000000001111111111111111111100)",
+      "blocks": 65532,
+      "sequence": 4194300
+    },
+    {
+      "description": "0x003ffffd (00000000001111111111111111111101)",
+      "blocks": 65533,
+      "sequence": 4194301
+    },
+    {
+      "description": "0x003ffffe (00000000001111111111111111111110)",
+      "blocks": 65534,
+      "sequence": 4194302
+    },
+    {
+      "description": "0x003fffff (00000000001111111111111111111111)",
+      "blocks": 65535,
+      "sequence": 4194303
+    },
+    {
+      "description": "0x00400000 (00000000010000000000000000000000)",
+      "seconds": 0,
+      "sequence": 4194304
+    },
+    {
+      "description": "0x00400001 (00000000010000000000000000000001)",
+      "seconds": 512,
+      "sequence": 4194305
+    },
+    {
+      "description": "0x00400002 (00000000010000000000000000000010)",
+      "seconds": 1024,
+      "sequence": 4194306
+    },
+    {
+      "description": "0x00400003 (00000000010000000000000000000011)",
+      "seconds": 1536,
+      "sequence": 4194307
+    },
+    {
+      "description": "0x00400004 (00000000010000000000000000000100)",
+      "seconds": 2048,
+      "sequence": 4194308
+    },
+    {
+      "description": "0x00400005 (00000000010000000000000000000101)",
+      "seconds": 2560,
+      "sequence": 4194309
+    },
+    {
+      "description": "0x00400006 (00000000010000000000000000000110)",
+      "seconds": 3072,
+      "sequence": 4194310
+    },
+    {
+      "description": "0x00400007 (00000000010000000000000000000111)",
+      "seconds": 3584,
+      "sequence": 4194311
+    },
+    {
+      "description": "0x00400008 (00000000010000000000000000001000)",
+      "seconds": 4096,
+      "sequence": 4194312
+    },
+    {
+      "description": "0x00400009 (00000000010000000000000000001001)",
+      "seconds": 4608,
+      "sequence": 4194313
+    },
+    {
+      "description": "0x0040000a (00000000010000000000000000001010)",
+      "seconds": 5120,
+      "sequence": 4194314
+    },
+    {
+      "description": "0x0040000b (00000000010000000000000000001011)",
+      "seconds": 5632,
+      "sequence": 4194315
+    },
+    {
+      "description": "0x0040000c (00000000010000000000000000001100)",
+      "seconds": 6144,
+      "sequence": 4194316
+    },
+    {
+      "description": "0x0040000d (00000000010000000000000000001101)",
+      "seconds": 6656,
+      "sequence": 4194317
+    },
+    {
+      "description": "0x0040000e (00000000010000000000000000001110)",
+      "seconds": 7168,
+      "sequence": 4194318
+    },
+    {
+      "description": "0x0040fffc (00000000010000001111111111111100)",
+      "seconds": 33552384,
+      "sequence": 4259836
+    },
+    {
+      "description": "0x0040fffd (00000000010000001111111111111101)",
+      "seconds": 33552896,
+      "sequence": 4259837
+    },
+    {
+      "description": "0x0040fffe (00000000010000001111111111111110)",
+      "seconds": 33553408,
+      "sequence": 4259838
+    },
+    {
+      "description": "0x0040ffff (00000000010000001111111111111111)",
+      "seconds": 33553920,
+      "sequence": 4259839
+    },
+    {
+      "description": "0x00410000 (00000000010000010000000000000000)",
+      "seconds": 0,
+      "sequence": 4259840
+    },
+    {
+      "description": "0x00410001 (00000000010000010000000000000001)",
+      "seconds": 512,
+      "sequence": 4259841
+    },
+    {
+      "description": "0x00410002 (00000000010000010000000000000010)",
+      "seconds": 1024,
+      "sequence": 4259842
+    },
+    {
+      "description": "0x00410003 (00000000010000010000000000000011)",
+      "seconds": 1536,
+      "sequence": 4259843
+    },
+    {
+      "description": "0x00410004 (00000000010000010000000000000100)",
+      "seconds": 2048,
+      "sequence": 4259844
+    },
+    {
+      "description": "0x00410005 (00000000010000010000000000000101)",
+      "seconds": 2560,
+      "sequence": 4259845
+    },
+    {
+      "description": "0x00410006 (00000000010000010000000000000110)",
+      "seconds": 3072,
+      "sequence": 4259846
+    },
+    {
+      "description": "0x00410007 (00000000010000010000000000000111)",
+      "seconds": 3584,
+      "sequence": 4259847
+    },
+    {
+      "description": "0x00410008 (00000000010000010000000000001000)",
+      "seconds": 4096,
+      "sequence": 4259848
+    },
+    {
+      "description": "0x00410009 (00000000010000010000000000001001)",
+      "seconds": 4608,
+      "sequence": 4259849
+    },
+    {
+      "description": "0x0041000a (00000000010000010000000000001010)",
+      "seconds": 5120,
+      "sequence": 4259850
+    },
+    {
+      "description": "0x0041000b (00000000010000010000000000001011)",
+      "seconds": 5632,
+      "sequence": 4259851
+    },
+    {
+      "description": "0x0041000c (00000000010000010000000000001100)",
+      "seconds": 6144,
+      "sequence": 4259852
+    },
+    {
+      "description": "0x0041000d (00000000010000010000000000001101)",
+      "seconds": 6656,
+      "sequence": 4259853
+    },
+    {
+      "description": "0x0041000e (00000000010000010000000000001110)",
+      "seconds": 7168,
+      "sequence": 4259854
+    },
+    {
+      "description": "0x7ffffffc (01111111111111111111111111111100)",
+      "seconds": 33552384,
+      "sequence": 2147483644
+    },
+    {
+      "description": "0x7ffffffd (01111111111111111111111111111101)",
+      "seconds": 33552896,
+      "sequence": 2147483645
+    },
+    {
+      "description": "0x7ffffffe (01111111111111111111111111111110)",
+      "seconds": 33553408,
+      "sequence": 2147483646
+    },
+    {
+      "description": "0x7fffffff (01111111111111111111111111111111)",
+      "seconds": 33553920,
+      "sequence": 2147483647
+    },
+    {
+      "description": "0x80000000 (10000000000000000000000000000000)",
+      "sequence": 2147483648,
+      "disabled": true
+    },
+    {
+      "description": "0x80000001 (10000000000000000000000000000001)",
+      "sequence": 2147483649,
+      "disabled": true
+    },
+    {
+      "description": "0x80000002 (10000000000000000000000000000010)",
+      "sequence": 2147483650,
+      "disabled": true
+    },
+    {
+      "description": "0x80000003 (10000000000000000000000000000011)",
+      "sequence": 2147483651,
+      "disabled": true
+    },
+    {
+      "description": "0x80000004 (10000000000000000000000000000100)",
+      "sequence": 2147483652,
+      "disabled": true
+    },
+    {
+      "description": "0x80000005 (10000000000000000000000000000101)",
+      "sequence": 2147483653,
+      "disabled": true
+    },
+    {
+      "description": "0x80000006 (10000000000000000000000000000110)",
+      "sequence": 2147483654,
+      "disabled": true
+    },
+    {
+      "description": "0x80000007 (10000000000000000000000000000111)",
+      "sequence": 2147483655,
+      "disabled": true
+    },
+    {
+      "description": "0x80000008 (10000000000000000000000000001000)",
+      "sequence": 2147483656,
+      "disabled": true
+    },
+    {
+      "description": "0x80000009 (10000000000000000000000000001001)",
+      "sequence": 2147483657,
+      "disabled": true
+    },
+    {
+      "description": "0x8000000a (10000000000000000000000000001010)",
+      "sequence": 2147483658,
+      "disabled": true
+    },
+    {
+      "description": "0x8000000b (10000000000000000000000000001011)",
+      "sequence": 2147483659,
+      "disabled": true
+    },
+    {
+      "description": "0x8000000c (10000000000000000000000000001100)",
+      "sequence": 2147483660,
+      "disabled": true
+    },
+    {
+      "description": "0x8000000d (10000000000000000000000000001101)",
+      "sequence": 2147483661,
+      "disabled": true
+    },
+    {
+      "description": "0x8000000e (10000000000000000000000000001110)",
+      "sequence": 2147483662,
+      "disabled": true
+    }
+  ],
+  "invalid": [
+    {
+      "blocks": 65535,
+      "exception": "Expected Number blocks < "
+    },
+    {
+      "blocks": 65536,
+      "exception": "Expected Number blocks < "
+    },
+    {
+      "blocks": null,
+      "exception": "Expected Number blocks"
+    },
+    {
+      "seconds": 1,
+      "exception": "Expected Number seconds as multiple of 512"
+    },
+    {
+      "seconds": 511,
+      "exception": "Expected Number seconds as multiple of 512"
+    },
+    {
+      "seconds": 513,
+      "exception": "Expected Number seconds as multiple of 512"
+    },
+    {
+      "seconds": 33554432,
+      "exception": "Expected Number seconds < 33554432"
+    },
+    {
+      "seconds": null,
+      "exception": "Expected Number seconds"
+    }
+  ]
 }
