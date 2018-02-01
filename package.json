@@ -1,7 +1,7 @@
 {
   "name": "bip68",
   "version": "1.0.3",
-  "description": "Relative lock-time using consensus-enforced sequence numbers",
+  "description": "A BIP68 relative lock-time encoding library.",
   "keywords": [
     "bip68",
     "htlc",
@@ -37,8 +37,5 @@
   },
   "engines": {
     "node": ">=4.5.0"
-  },
-  "dependencies": {
-    "safe-buffer": "^5.1.1"
   }
 }
