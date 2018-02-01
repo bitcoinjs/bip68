@@ -1,6 +1,6 @@
 {
   "name": "bip68",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A BIP68 relative lock-time encoding library.",
   "keywords": [
     "bip68",
