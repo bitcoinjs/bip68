@@ -23,7 +23,9 @@ function decode (sequence) {
   }
 }
 
-function encode ({ blocks, seconds }) {
+function encode (blockSeconds) {
+  const blocks = blockSeconds.blocks
+  const seconds = blockSeconds.seconds
   if (blocks !== undefined && seconds !== undefined) throw new TypeError('Cannot encode blocks AND seconds')
   if (blocks === undefined && seconds === undefined) return SEQUENCE_FINAL // neither? assume final
 
@@ -41,4 +43,4 @@ function encode ({ blocks, seconds }) {
   return blocks
 }
 
-module.exports = { decode, encode }
+module.exports = { decode: decode, encode: encode }
